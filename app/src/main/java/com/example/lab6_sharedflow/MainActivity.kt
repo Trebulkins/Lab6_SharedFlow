@@ -5,12 +5,11 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.lab6_sharedflow.ui.theme.Lab6_SharedFlowTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,9 +27,13 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun ScreenSetup(modifier: Modifier = Modifier) {
+fun ScreenSetup(
+    modifier: Modifier = Modifier,
+    viewModel: DemoViewModel = viewModel()
+) {
     MainScreen(modifier)
 }
+
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
 }
