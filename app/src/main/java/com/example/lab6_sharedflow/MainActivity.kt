@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Lab6_SharedFlowTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ScreenSetup(innerPadding as Modifier)
+                    ScreenSetup(Modifier.padding(innerPadding))
                 }
             }
         }
