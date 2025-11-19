@@ -13,6 +13,7 @@ class DemoViewModel : ViewModel() {
     init {
         sharedFlowInit()
     }
+
     fun sharedFlowInit() {
         viewModelScope.launch {
             for (i in 1..1000) {
